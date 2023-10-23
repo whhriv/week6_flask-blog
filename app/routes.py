@@ -8,7 +8,6 @@ def index():
     return render_template('index.html', first_name=name,last_name='Stanton', colors=colors)
 
 # Great a second route
-@app.route('/new')
-def new():
-    name = 'William Reeder'
-    colors = ['red', 'orange', 'yellow', 'green', 'blue']
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
